@@ -16,7 +16,7 @@ from utils import Timer, accuracy_from_logits, count_parameters, ensure_dir, get
 MODEL_DATASETS = {
     "lenet": "mnist",
     "vgg16": "cifar10",
-    "resnet34": "cifar100",
+    "resnet34": "cifar10",
 }
 
 DEFAULT_LR = {

@@ -4,13 +4,13 @@
 
 - **LeNet-5** для набора **MNIST**
 - **VGG16-подобная сеть** для **CIFAR-10**
-- **ResNet-34** для **CIFAR-100**
+- **ResNet-34** для **CIFAR-10**
 
 Код соответствует заданию лабораторной работы: можно обучать каждую сеть, сравнивать оптимизаторы, строить графики `Loss` и `Accuracy` по эпохам и отдельно смотреть влияние регуляризации.
 
 ## Структура проекта
 
-- `datasets.py` — загрузка и подготовка MNIST, CIFAR-10 и CIFAR-100
+- `datasets.py` — загрузка и подготовка MNIST и CIFAR-10
 - `models.py` — архитектуры LeNet, VGG16 и ResNet-34
 - `train.py` — одиночный запуск обучения
 - `experiment.py` — серия экспериментов для сравнения оптимизаторов и регуляризации
@@ -54,7 +54,7 @@ python experiment.py --model lenet --mode optimizers --epochs 10
 python experiment.py --model vgg16 --mode optimizers --epochs 20
 ```
 
-### ResNet34 / CIFAR-100
+### ResNet34 / CIFAR-10
 ```bash
 python experiment.py --model resnet34 --mode optimizers --epochs 20
 ```

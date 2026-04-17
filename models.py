@@ -163,5 +163,5 @@ def build_model(model_name: str, dropout: float = 0.0) -> nn.Module:
     if model_name == "vgg16":
         return SmallVGG16(num_classes=10, dropout=dropout)
     if model_name == "resnet34":
-        return ResNet34CIFAR(num_classes=100, dropout=dropout)
+        return ResNet34CIFAR(num_classes=10, dropout=dropout)
     raise ValueError(f"Неизвестная архитектура: {model_name}")
